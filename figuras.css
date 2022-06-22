@@ -1,0 +1,100 @@
+:root {
+    /* Colores */
+    --skyblue: #a2dbff;
+    --soft-purple: #ccd9ff;
+    --green: #005900;
+    --soft-green: #889300;
+    --yellow: #f8cf59;
+    --black: black;
+    --just-white: #f3eae8;
+    --soft-green-2: #08b786;
+    --soft-green-3: #59f592;
+    --blue: #0c718b;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+}
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 120px;
+    text-align: center;
+    background: linear-gradient(207.8deg, var(--soft-green-2) 16.69%, var(--soft-green-3) 100%);
+}
+.header--title-container {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: 218px;
+    margin-top: 40px;
+    text-align: center;
+    /* Alinear un objeto dentro de un contenedor */
+    align-self: center;
+}
+.header--title-container h1 {
+    /* Utilizar rem para las letras */
+    font-size: 2.4rem;
+    font-weight: bold;
+    /* line-height = altura entre lineas */
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+.header--title-container p {
+    margin-top: 25px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--just-white);
+}
+.main-product-detail {
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px 10px;
+    background-color: var(--just-white);
+}
+.product-detail--card {
+    width: 100%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 150px;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: var(--blue);
+    border-radius: 5px;
+}
+.product--card-title {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--just-white);
+}
+.product--card-title {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--just-white);
+}
+
+.product--card-subtitle {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--just-white);
+}
+
+

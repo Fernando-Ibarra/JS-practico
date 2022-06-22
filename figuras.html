@@ -1,13 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./figuras.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
     <title>Figuras Geométricas</title>
 </head>
 <body>
-    <h1>Figuras Geométricas</h1>
+    <header>
+        <div class="header--title-container">
+            <h1>Figuras Geométricas</h1>
+            <p>Primer taller del curso de JS Práctico</p>
+        </div>
+    </header>
+    <section class="main-product-detail">
+        <section class="product-detail--card">
+            <h2 class="product--card-title">Calcula el área y perímetro de un cuadrado</h2>
+            <form>
+                <label for="InputCuadrado" class="product--card-subtitle" >Escribe cuánto mide cada lado de tu cuadrado:</label>
+                <input type="number" id="InputCuadrado">
+                <button type="button" onclick="CalcularPerimetroCuadrado()">Calcular el perímetro</button>
+                <button type="button" onclick="CalcularAreaCuadrado()">Calcular el área</button>
+            </form>
+        </section>
+        <section class="product-detail--card">
+            <h2 class="product--card-title">Calcula el área y perímetro de un triángulo</h2>
+            <form>
+                <label class="product--card-subtitle">Escribe los lados de tu triángulo:</label><br>
+                <label for="InputLado1" class="product--card-subtitle">Lado 1:</label>
+                <input type="number" id="InputLado1"><br>
+                <label for="InputLado2" class="product--card-subtitle">Lado 2:</label>
+                <input type="number" id="InputLado2"><br>
+                <label for="InputBase" class="product--card-subtitle">Base:</label>
+                <input type="number" id="InputBase"><br>
+                <button type="button" onclick="CalcularPerimetroTriangulo()">Calcular el perímetro</button>
+                <button type="button" onclick="CalcularAreaTriangulo()">Calcular el área</button>
+            </form>
+        </section>
+        <section class="product-detail--card">
+            <h2 class="product--card-title">Calcular diametro, circunferencia y área de un círculo</h2>
+            <form>
+                <label class="product--card-subtitle">Escribe el radio de tu círculo:</label>
+                <input type="number" id="InputRadio">
+                <button type="button" onclick="CalcularPerimetroCuadrado()">Calcular el diametro</button>
+                <button type="button" onclick="CalcularPerimetroCuadrado()">Calcular el perímetro</button>
+                <button type="button" onclick="CalcularAreaCuadrado()">Calcular el área</button>
+            </form>
+        </section>
+    </section>
     <script src="./figuras.js"></script>
 </body>
 </html>
